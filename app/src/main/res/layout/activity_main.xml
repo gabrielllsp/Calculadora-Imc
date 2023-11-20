@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/matte_black"
+    tools:context=".MainActivity">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="10dp"
+                android:text="@string/calculadora_de_imc"
+                android:textColor="@color/light_matte_black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <ImageView
+        android:id="@+id/img_imc"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/image_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/text_input_height"
+        style="@style/EditTextTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:drawableStart="@drawable/ic_height"
+        android:drawableTint="@color/red"
+        android:hint="@string/altura"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_imc" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/text_input_weight"
+        style="@style/EditTextTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:drawableStart="@drawable/ic_weight"
+        android:drawableTint="@color/red"
+        android:hint="@string/peso"
+        android:maxLength="4"
+        android:textColorHint="@color/black"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_input_height" />
+
+    <Button
+        android:id="@+id/btn_calculate"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/calcular"
+        android:textColor="@color/light_matte_black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_delete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_weight" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/limpar"
+        android:textColor="@color/light_matte_black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_calculate"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_weight"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

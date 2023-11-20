@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Imc</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="result">Classificação:</string>
+    <string name="menor_que_18_5_peso_baixo">Entre 17.0 e 18.5 - Abaixo do peso</string>
+    <string name="entre_18_5_e_24_9_peso_normal">Entre 18.5 e 24.9 - Peso normal</string>
+    <string name="entre_25_e_29_9_sobrepeso">Entre 25 e 29.9 - Sobrepeso</string>
+    <string name="maior_que_40_0_obesidade_grave">Entre 35.0 e 39.9 - Obesidade grave</string>
+    <string name="back">Voltar</string>
+    <string name="entre_30_0_e_39_9_obesidade">Entre 30.0 e 34.9 - Obesidade</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpar">Limpar</string>
+    <string name="peso">Peso</string>
+    <string name="altura">Altura</string>
+    <string name="calculadora_de_imc">Calculadora de IMC</string>
+    <string name="resultado">Resultado</string>
+    <string name="menor_que_17_0">Menor que 17.0 - Muito abaixo do peso</string>
+</resources>

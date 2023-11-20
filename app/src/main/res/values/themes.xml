@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Imc" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+    </style>
+
+    <style name="Theme.Imc" parent="Base.Theme.Imc" />
+
+    <style name="EditTextTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+</resources>
